@@ -42,7 +42,7 @@ server.listen(3000, () =>
 );
 ```
 
-That's all we need for a functioning Express server that doesn't really do anything.
+That's all we need for a functioning Express server that doesn't really do anything. Run `npx nodemon server.js` to start a auto-restarting server.
 
 For comparison here's the simplest vanilla Node server:
 
