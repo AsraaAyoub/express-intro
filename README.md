@@ -97,6 +97,14 @@ Add the response to your server, then refresh the page. You should see the "hell
 
 Add a second route for `GET /api` that sends a JSON object with a `"message"` property of "hello world". Visit http://localhost:3000/api in your browser and you should see a JSON response of `{ "message": "hello world" }`. Check the network tab and you see see the `content-type` response header set to `application/json`.
 
+#### Setting status codes
+
+Express will default to a status code of `200` when you use `res.send` to send a response. If you need to set a different code you can use the `.status` method, which is chainable with `.send`:
+
+```js
+res.status(401).send("Unauthorised");
+```
+
 #### Redirects
 
 Express also has a convenience method for redirecting. It looks works like this: `res.redirect("/some-url")`, and it will automatically set the status code to `302` and set the `location` header.
