@@ -6,7 +6,7 @@ This quick intro shows how to set up a basic server, and demonstrates some of th
 
 ## Setup
 
-We're going to set up an Express server from scratch.
+We're going to set up an Express server from scratch, so **do not clone this repo**.
 
 1. Create a new directory on your computer
 1. Run `npm init -y` to create a `package.json`
